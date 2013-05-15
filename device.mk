@@ -23,7 +23,7 @@
 $(call inherit-product-if-exists, vendor/lge/gee/gee-vendor.mk)
 
 ## overlays
-DEVICE_PACKAGE_OVERLAYS += device/lge/geehrc4g_spr_us/overlay
+DEVICE_PACKAGE_OVERLAYS += device/lge/gee_spr/overlay
 
 ## common overlays
 DEVICE_PACKAGE_OVERLAYS += device/lge/gee-common/overlay-cdma
@@ -66,17 +66,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # GPS configuration
 PRODUCT_COPY_FILES += \
-        device/lge/geehrc4g_spr_us/configs/gps.conf:system/etc/gps.conf
+        device/lge/gee_spr/configs/gps.conf:system/etc/gps.conf
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    device/lge/geehrc4g_spr_us/ramdisk/init.geehrc4g_spr_us.rc:root/init.geehrc4g_spr_us.rc \
-    device/lge/geehrc4g_spr_us/ramdisk/ueventd.geehrc4g_spr_us.rc:root/ueventd.geehrc4g_spr_us.rc \
-    device/lge/geehrc4g_spr_us/ramdisk/fstab.gee:root/fstab.gee
+    device/lge/gee_spr/ramdisk/init.gee_spr.rc:root/init.gee_spr.rc \
+    device/lge/gee_spr/ramdisk/ueventd.gee_spr.rc:root/ueventd.gee_spr.rc \
+    device/lge/gee_spr/ramdisk/fstab.gee:root/fstab.gee
 
 # NFC Firmware
 PRODUCT_COPY_FILES += \
-    device/lge/geehrc4g_spr_us/prebuilt/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
+    device/lge/gee_spr/prebuilt/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -84,6 +84,6 @@ PRODUCT_COPY_FILES += \
 
 # CameraHAL
 PRODUCT_PACKAGES += \
-   camera.geehrc4g_spr_us
+   camera.gee_spr
                    
 
