@@ -15,7 +15,7 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
 # Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/lge/gee_spr/full_gee_spr_spr_us.mk)
+$(call inherit-product, device/lge/gee_spr/full_gee_spr.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := gee_spr
