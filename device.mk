@@ -72,7 +72,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/lge/gee_spr/ramdisk/init.gee_spr.rc:root/init.gee_spr.rc \
     device/lge/gee_spr/ramdisk/ueventd.gee_spr.rc:root/ueventd.gee_spr.rc \
-    device/lge/gee_spr/ramdisk/fstab.gee:root/fstab.gee
 
 # NFC Firmware
 PRODUCT_COPY_FILES += \

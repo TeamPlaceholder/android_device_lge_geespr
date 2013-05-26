@@ -14,7 +14,8 @@
 # limitations under the License.
 #
 
-import init.gee.rc
+import init.qcom.rc
+import init.target.rc
 
 on init
     # See storage config details at http://source.android.com/tech/storage/
