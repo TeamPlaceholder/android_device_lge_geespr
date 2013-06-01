@@ -68,11 +68,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
         device/lge/gee_spr/configs/gps.conf:system/etc/gps.conf
 
-# Ramdisk
-PRODUCT_COPY_FILES += \
-    device/lge/gee_spr/ramdisk/init.gee_spr.rc:root/init.gee_spr.rc \
-    device/lge/gee_spr/ramdisk/ueventd.gee_spr.rc:root/ueventd.gee_spr.rc \
-
 # NFC Firmware
 PRODUCT_COPY_FILES += \
     device/lge/gee_spr/prebuilt/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
