@@ -14,13 +14,7 @@
 # limitations under the License.
 #
 
-BOARD_KERNEL_CMDLINE := console=ttySHL0,115200,n8 androidboot.hardware=qcom lpj=67677
-BOARD_KERNEL_BASE := 0x80200000
-BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
-
 TARGET_KERNEL_CONFIG := geehrc_defconfig
-TARGET_KERNEL_SOURCE := kernel/lge/geem
 
 #Add Custom RIL class automatically
 BOARD_RIL_CLASS := "../../../device/lge/gee_spr/LGEQualcommCDMARIL"
