@@ -15,6 +15,7 @@
 #
 
 TARGET_KERNEL_CONFIG := geehrc_defconfig
+BOARD_KERNEL_CMDLINE := console=ttySHL0,115200,n8 androidboot.hardware=gee_spr lpj=67677
 
 #Add Custom RIL class automatically
 BOARD_RIL_CLASS := "../../../device/lge/gee_spr/LGEQualcommCDMARIL"
