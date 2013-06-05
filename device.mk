@@ -39,7 +39,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.gee_spr.rc \
-    fstab.gee_spr \
     ueventd.gee_spr.rc
 
 # Do not power down SIM card when modem is sent to Low Power Mode.
