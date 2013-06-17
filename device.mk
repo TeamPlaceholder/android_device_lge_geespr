@@ -40,9 +40,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.apm_sim_not_pwdn=1
 
-# QC RIL path for rild
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-        rild.libargs=-d /dev/smd0
 
 # Telephony Properties
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -60,7 +57,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
         telephony.sms.pseudo_multipart=1 \
         DEVICE_PROVISIONED=1
 
-    
 # PRODUCT_CHARACTERISTICS := nosdcard  
 
 # GPS configuration
