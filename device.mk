@@ -40,7 +40,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.apm_sim_not_pwdn=1
 
-
 # Telephony Properties
 PRODUCT_PROPERTY_OVERRIDES += \
         ro.telephony.ril_class=LGEQualcommCDMARIL \
@@ -65,4 +64,4 @@ PRODUCT_COPY_FILES += \
 
 # NFC Firmware
 PRODUCT_COPY_FILES += \
-    device/lge/gee_spr/prebuilt/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
+    device/lge/gee_spr/prebuilt/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so
