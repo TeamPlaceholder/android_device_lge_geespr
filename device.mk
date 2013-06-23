@@ -53,7 +53,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
         DEVICE_PROVISIONED=1
 
 # PRODUCT_CHARACTERISTICS := nosdcard  
-
-# NFC Firmware
-PRODUCT_COPY_FILES += \
-    device/lge/gee_spr/prebuilt/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so
