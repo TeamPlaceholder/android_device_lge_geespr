@@ -54,10 +54,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # PRODUCT_CHARACTERISTICS := nosdcard  
 
-# GPS configuration
-PRODUCT_COPY_FILES += \
-        device/lge/gee_spr/configs/gps.conf:system/etc/gps.conf
-
 # NFC Firmware
 PRODUCT_COPY_FILES += \
     device/lge/gee_spr/prebuilt/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so
