@@ -31,11 +31,6 @@ DEVICE_PACKAGE_OVERLAYS += device/lge/gee-common/overlay-cdma
 # Inherit from gee-common
 $(call inherit-product, device/lge/gee-common/gee-common.mk)
 
-# Enable for debugging
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.debuggable=1 \
-    persist.service.adb.enable=1
-
 # Telephony Properties
 PRODUCT_PROPERTY_OVERRIDES += \
         ro.telephony.ril_class=LGEQualcommCDMARIL \
