@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-TARGET_KERNEL_CONFIG := geehrc_defconfig
+TARGET_KERNEL_CONFIG := geespr_defconfig
 
 #Add Custom RIL class automatically
 BOARD_RIL_CLASS := "../../../device/lge/gee_spr/LGEQualcommCDMARIL"
