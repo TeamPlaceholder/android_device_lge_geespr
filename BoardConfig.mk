@@ -23,7 +23,7 @@ BOARD_RIL_CLASS := "../../../device/lge/gee_spr/LGEQualcommCDMARIL"
 -include device/lge/gee-common/BoardConfigCommon.mk
 
 # assert
-TARGET_OTA_ASSERT_DEVICE := geebus,geebusc,geehrc,geehrc4g,gee_spr,geehrc_sp,ls970,geehrc4g_spr_us,jeebus,jeebusc
+TARGET_OTA_ASSERT_DEVICE := geehrc,geehrc4g,gee_spr,geehrc_sp,ls970,geehrc4g_spr_us
 
 # board-info
 TARGET_BOARD_INFO_FILE := device/lge/gee_spr/board-info.txt
