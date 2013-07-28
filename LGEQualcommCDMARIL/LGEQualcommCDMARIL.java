@@ -42,6 +42,10 @@ import com.android.internal.telephony.cdma.SignalToneUtil;
 import java.util.ArrayList;
 import java.util.Collections;
 
+import com.android.internal.telephony.uicc.IccCardApplicationStatus;
+import com.android.internal.telephony.uicc.IccCardStatus;
+import com.android.internal.telephony.dataconnection.DataCallResponse;
+
 /**
  * As stands, the RIL supports calling get subscription source which can
  * handle both ruim and nv qc devices. The lteOnCdma property allows
