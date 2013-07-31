@@ -23,7 +23,7 @@
 $(call inherit-product-if-exists, vendor/lge/gee/gee-vendor.mk)
 
 ## overlays
-DEVICE_PACKAGE_OVERLAYS += device/lge/gee_spr/overlay
+DEVICE_PACKAGE_OVERLAYS += device/lge/geespr/overlay
 
 ## common overlays
 DEVICE_PACKAGE_OVERLAYS += device/lge/gee-common/overlay-cdma

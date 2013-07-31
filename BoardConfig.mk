@@ -17,16 +17,16 @@
 TARGET_KERNEL_CONFIG := geespr_defconfig
 
 #Add Custom RIL class automatically
-BOARD_RIL_CLASS := "../../../device/lge/gee_spr/LGEQualcommCDMARIL"
+BOARD_RIL_CLASS := "../../../device/lge/geespr/LGEQualcommCDMARIL"
 
 # inherit from gee-common
 -include device/lge/gee-common/BoardConfigCommon.mk
 
 # assert
-TARGET_OTA_ASSERT_DEVICE := geehrc,geehrc4g,gee_spr,geehrc_sp,ls970,geehrc4g_spr_us
+TARGET_OTA_ASSERT_DEVICE := geehrc,geehrc4g,gee_spr,geehrc_sp,ls970,geehrc4g_spr_us,geespr
 
 # board-info
-TARGET_BOARD_INFO_FILE := device/lge/gee_spr/board-info.txt
+TARGET_BOARD_INFO_FILE := device/lge/geespr/board-info.txt
 
 # inherit from the proprietary version
 -include vendor/lge/gee/BoardConfigVendor.mk
