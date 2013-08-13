@@ -29,7 +29,7 @@ import android.telephony.SmsMessage;
 import android.os.SystemProperties;
 import android.os.SystemClock;
 import android.text.TextUtils;
-import android.util.Log;
+import android.telephony.Rlog;
 import android.telephony.SignalStrength;
 
 import android.telephony.PhoneNumberUtils;
@@ -45,6 +45,7 @@ import java.util.Collections;
 import com.android.internal.telephony.uicc.IccCardApplicationStatus;
 import com.android.internal.telephony.uicc.IccCardStatus;
 import com.android.internal.telephony.dataconnection.DataCallResponse;
+import com.android.internal.telephony.dataconnection.DcFailCause;
 
 /**
  * As stands, the RIL supports calling get subscription source which can
@@ -100,8 +101,8 @@ CommandsInterface {
                  (ca.perso_substate == IccCardApplicationStatus.PersoSubState.PERSOSUBSTATE_UNKNOWN))) {
                     // ridiculous hack for network SIM unlock pin
                     ca.app_state = IccCardApplicationStatus.AppState.APPSTATE_UNKNOWN;
-                    Log.d(LOG_TAG, "ca.app_state == AppState.APPSTATE_SUBSCRIPTION_PERSO");
-                    Log.d(LOG_TAG, "ca.perso_substate == PersoSubState.PERSOSUBSTATE_READY");
+                    Rlog.d(RILJ_LOG_TAG, "ca.app_state == AppState.APPSTATE_SUBSCRIPTION_PERSO");
+                    Rlog.d(RILJ_LOG_TAG, "ca.perso_substate == PersoSubState.PERSOSUBSTATE_READY");
                 }
             ca.aid = p.readString();
             ca.app_label = p.readString();
@@ -128,7 +129,7 @@ CommandsInterface {
             long timeoutTime  = SystemClock.elapsedRealtime() + SEND_SMS_TIMEOUT_IN_MS;
             long waitTimeLeft = SEND_SMS_TIMEOUT_IN_MS;
             while (mIsSendingSMS && (waitTimeLeft > 0)) {
-                Log.d(LOG_TAG, "sendCdmaSms() waiting for response of previous CDMA_SEND_SMS");
+                Rlog.d(RILJ_LOG_TAG, "sendCdmaSms() waiting for response of previous CDMA_SEND_SMS");
                 try {
                     mSMSLock.wait(waitTimeLeft);
                 } catch (InterruptedException ex) {
@@ -137,7 +138,7 @@ CommandsInterface {
                 waitTimeLeft = timeoutTime - SystemClock.elapsedRealtime();
             }
             if (waitTimeLeft <= 0) {
-                Log.e(LOG_TAG, "sendCdmaSms() timed out waiting for response of previous CDMA_SEND_SMS");
+                Rlog.e(LOG_TAG, "sendCdmaSms() timed out waiting for response of previous CDMA_SEND_SMS");
             }
             mIsSendingSMS = true;
         }
