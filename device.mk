@@ -14,8 +14,8 @@
 # limitations under the License.
 #
 
-# This file includes all definitions that apply to ALL geehrc devices, and
-# are also specific to geehrc devices
+# This file includes all definitions that apply to ALL geespr devices, and
+# are also specific to geespr devices
 #
 # Everything in this directory will become public
 
@@ -37,7 +37,6 @@ PRODUCT_COPY_FILES += \
 
 # Telephony Properties
 PRODUCT_PROPERTY_OVERRIDES += \
-        ro.telephony.ril_class=LGEQualcommCDMARIL \
         ro.cdma.home.operator.numeric=310120 \
         ro.cdma.home.operator.alpha=Sprint \
         telephony.lteOnCdmaDevice=1 \
