@@ -16,9 +16,6 @@
 
 TARGET_KERNEL_CONFIG := geespr_defconfig
 
-#Add Custom RIL class automatically
-BOARD_RIL_CLASS := "../../../device/lge/geespr/LGEQualcommCDMARIL"
-
 # inherit from gee-common
 -include device/lge/gee-common/BoardConfigCommon.mk
 
