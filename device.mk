@@ -51,3 +51,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
         DEVICE_PROVISIONED=1
 
 # PRODUCT_CHARACTERISTICS := nosdcard  
+
+#Prebuilt kernel for AOSP
+LOCAL_KERNEL := device/lge/geespr/kernel
+
+PRODUCT_COPY_FILES := \
+$(LOCAL_KERNEL):kernel
